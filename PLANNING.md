@@ -5,3 +5,24 @@ This design is inspired by the American startup, SpinLaunch. The company utilize
 &nbsp;
 ### Scope
 This project will attempt to recreate a 1:108 scale model of SpinLaunch's orbital launch system so as to launch a payload to gather data while in flight. The payload will return to the ground using a parachute so that the data can be analyzed. Using a scale such as this allows us to sidestep many of the design difficulties when operating on such a scale (Spinlaunch's test module is roughly 33 meters in diameter, nearly half the wingspan of a 747). Some of these challenges still exist, even at this scale, and a modular approach to design will ensure that our project can move along at a consistent rate. The first iteration will be a low RPM prototype lying on its side with no exterior walls. This guarantees that our first few launches will be safe and give us valuable inofrmation as to how to proceed. The next iteration will also be low RPM but on a vertical orientation and with exterior walls. This iteration will allow us to test and optimize the escape angle and time, and determine what precision our release mechanism is capable of. Finally, we will move to launching at a high RPM with a small escape window, gathering data and improving our payload design itself to finalize our design. This project is ambitious, and will require meticulous planning, design, and documentation, but is not overly difficult. If done correctly, it will demonstrate physical, mechanical, and electrical concepts in a clear and accesible way.
+&nbsp;
+### Schedule
+Week 1 (January 2-5)------------: Continue designs, drawings, initial CAD design of launcher.
+Week 2 (January 8-12)-----------: Design and CAD payload, block out code for launcher.
+Week 3 (January 15-19)----------: Finish CAD for launcher, code launcher.
+Week 4 (January 22-26)----------: Start assembly for prototype launcher, prototype payload, finish coding launcher.
+Week 5 (January 29-February 2)--: Start assembly for prototype launcher, prototype payload, finish coding launcher.
+Week 6 (February 5-9)-----------: Finish assembly for Mk. 1 launcher and Mk. 1 rocket, code payload (data collection).
+Week 7 (February 12-16)---------: Design parachute, test parachute release mechanism
+Week 8 (February 19-23)---------: Dry run launcher (without payload), test release mechanism at medium speeds
+Week 9 (February 26-March 1)----: Launch prototype with payload, low RPM, lateral
+Week 10 (March 4-8)-------------: Improve design for launcher and payload, strengthen weak points. Add walls and exit point if possible.
+Week 11 (March 11-15)-----------: Launch prototype II with payload, medium RPM, vertical.
+Week 12 (March 18-22)-----------: If walls and exit point not added already, add. Perform kinetics tests for the pico, improve cushioning and structure.
+Week 13 (March 25-29)-----------:
+Week 15 (April 8-12)------------:
+Week 16 (April 15-19)-----------:
+Week 17 (April 22-26)-----------:
+Week 18 (April 29-May 3)--------:
+Week 19 (May 6-10)--------------:
+Week 20 (May 13-17)-------------:
