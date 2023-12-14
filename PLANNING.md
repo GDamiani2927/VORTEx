@@ -19,10 +19,10 @@ Week 9 (February 26-March 1)----: Launch prototype with payload, low RPM, latera
 Week 10 (March 4-8)-------------: Improve design for launcher and payload, strengthen weak points. Add walls and exit point if possible.
 Week 11 (March 11-15)-----------: Launch prototype II with payload, medium RPM, vertical.
 Week 12 (March 18-22)-----------: If walls and exit point not added already, add. Perform kinetics tests for the pico, improve cushioning and structure.
-Week 13 (March 25-29)-----------:
-Week 15 (April 8-12)------------:
-Week 16 (April 15-19)-----------:
-Week 17 (April 22-26)-----------:
-Week 18 (April 29-May 3)--------:
-Week 19 (May 6-10)--------------:
-Week 20 (May 13-17)-------------:
+Week 13 (March 25-29)-----------: Launch prototype II with high RPM, vertical.
+Week 15 (April 8-12)------------: Improve payload mechanism, ensure pico is secured.
+Week 16 (April 15-19)-----------: Final changes, add decals.
+Week 17 (April 22-26)-----------: Launches and data collection.
+Week 18 (April 29-May 3)--------: Data Analysis, recording and organizing.
+Week 19 (May 6-10)--------------: Finish documentation.
+Week 20 (May 13-17)-------------: Finish documentation. 
