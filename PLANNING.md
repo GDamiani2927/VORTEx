@@ -71,18 +71,18 @@ Week 20 (May 13-17)-------------: Finish documentation.
 
 ### Pseudocode
 **Launcher Code**
-Set up motor
-Set target motor speed
-Set target for encoder value
-Define variables
-Increase motor up to target speed
-Spin motor until target encoder value reached
-Turn off electromagnet
-Stop motor
+Set up motor  
+Set target motor speed  
+Set target for encoder value  
+Define variables  
+Increase motor up to target speed  
+Spin motor until target encoder value reached  
+Turn off electromagnet  
+Stop motor  
 
 **Rocket Code**
-Set up accelerometer
-Define variables
-Collect position data
-Save data
+Set up accelerometer  
+Define variables  
+Collect position data  
+Save data  
 
