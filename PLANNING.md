@@ -45,6 +45,27 @@ Week 19 (May 6-10)--------------: Finish documentation.
 
 Week 20 (May 13-17)-------------: Finish documentation. 
 &nbsp;
+
+### Sketches
+![Image](sketches.jpg)
+&nbsp;
+### Pseudocode
+**Launcher Code:**  
+Set up motor  
+Set target motor speed  
+Set target for encoder value  
+Define variables  
+Increase motor up to target speed  
+Spin motor until target encoder value reached  
+Turn off electromagnet  
+Stop motor  
+**Rocket Code:**  
+Set up accelerometer  
+Define variables  
+Collect position data  
+Save data  
+Deploy parachute
+&nbsp;
 ### Bill of materials
 **Launcher**  
 -REV Robotics Core Hex Motor  
