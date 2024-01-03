@@ -45,8 +45,12 @@ Week 18 (April 29-May 3)--------: Data Analysis, recording and organizing.
 Week 19 (May 6-10)--------------: Finish documentation.
 
 Week 20 (May 13-17)-------------: Finish documentation. 
-
 &nbsp;
+
+### Sketches
+
+![Image](images/Sketches.jpg)
+
 ### Bill of materials
 **Launcher**  
 -REV Robotics Core Hex Motor  
@@ -68,6 +72,7 @@ Week 20 (May 13-17)-------------: Finish documentation.
 -Gyroscope (possibly)  
 -Connection for electromagnet (see diagram)  
 -Acrylic skeleton for structural stability  
+&nbsp;
 
 ### Pseudocode
 **Launcher Code:**  
