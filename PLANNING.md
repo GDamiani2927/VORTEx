@@ -13,7 +13,6 @@ Week 2 (January 8-12)-----------: Design and CAD payload, block out code for lau
 
 Week 3 (January 15-19)----------: Finish CAD for launcher, code launcher. 
 
-
 Week 4 (January 22-26)----------: Start assembly for prototype launcher, prototype payload, finish coding launcher.
 
 Week 5 (January 29-February 2)--: Start assembly for prototype launcher, prototype payload, finish coding launcher.
@@ -46,11 +45,6 @@ Week 19 (May 6-10)--------------: Finish documentation.
 
 Week 20 (May 13-17)-------------: Finish documentation. 
 &nbsp;
-
-### Sketches
-![Image](sketches.jpg)
-&nbsp;
-
 ### Bill of materials
 **Launcher**  
 -REV Robotics Core Hex Motor  
@@ -72,22 +66,11 @@ Week 20 (May 13-17)-------------: Finish documentation.
 -Gyroscope (possibly)  
 -Connection for electromagnet (see diagram)  
 -Acrylic skeleton for structural stability  
+-Servo for parachute release
+-Trashbag for parachute
+-Paracord
 &nbsp;
+### Risk Mitigation
+This project requires careful planning to ensure that proper precautions are taken when operating. PPE will be required to be within firing radius (or 20 feet) of the launcher. When the launcher is active (spinning and or armed), additional precautions must be taken. A "remote" arming and activation procedure will be utilized, essentially a long wire with a controller to arm and launch that can be used from outside a 10 foot radius. Furthermore, all launch areas must be scouted beforehand to ensure their safety, and proper precautions must be taken to ensure that the parachute will deploy, such as low rpm and rotational speed tests. Built in to the project planning is an incremental increase in RPM so as to ensure each step is safe before progressing to the max RPM range.
 
-### Pseudocode
-**Launcher Code:**  
-Set up motor  
-Set target motor speed  
-Set target for encoder value  
-Define variables  
-Increase motor up to target speed  
-Spin motor until target encoder value reached  
-Turn off electromagnet  
-Stop motor  
 
-**Rocket Code:**  
-Set up accelerometer  
-Define variables  
-Collect position data  
-Save data  
-&nbsp;
