@@ -49,7 +49,7 @@ Week 20 (May 13-17)-------------: Finish documentation.
 
 ### Sketches
 
-![Image](images/Sketches.jpg)
+![Image](sketches.jpg)
 
 ### Bill of materials
 **Launcher**  
