@@ -48,6 +48,7 @@ Week 20 (May 13-17)-------------: Finish documentation.
 
 ### Sketches
 <img src="sketches.jpg" alt="Planning Blueprint" width="400" height="500">
+
 &nbsp;
 ### Pseudocode
 **Launcher Code:**  
@@ -68,7 +69,7 @@ Deploy parachute
 &nbsp;
 ### Bill of materials
 **Launcher**  
--REV Robotics Core Hex Motor  
+-REV Robotics HD Hex Motor
 -REV Robotics 90° Gearbox  
 -REV Stackable Ultraplanetry Gearboxes  
 -Compatable Hex Shaft  
