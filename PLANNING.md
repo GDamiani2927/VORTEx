@@ -70,7 +70,7 @@ Week 20 (May 13-17)-------------: Finish documentation.
 -Acrylic skeleton for structural stability  
 
 ### Pseudocode
-**Launcher Code**
+**Launcher Code**  
 Set up motor  
 Set target motor speed  
 Set target for encoder value  
@@ -80,7 +80,7 @@ Spin motor until target encoder value reached
 Turn off electromagnet  
 Stop motor  
 
-**Rocket Code**
+**Rocket Code**  
 Set up accelerometer  
 Define variables  
 Collect position data  
