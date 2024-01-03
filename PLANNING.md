@@ -69,4 +69,20 @@ Week 20 (May 13-17)-------------: Finish documentation.
 -Connection for electromagnet (see diagram)  
 -Acrylic skeleton for structural stability  
 
+### Pseudocode
+**Launcher Code**
+Set up motor
+Set target motor speed
+Set target for encoder value
+Define variables
+Increase motor up to target speed
+Spin motor until target encoder value reached
+Turn off electromagnet
+Stop motor
+
+**Rocket Code**
+Set up accelerometer
+Define variables
+Collect position data
+Save data
 
