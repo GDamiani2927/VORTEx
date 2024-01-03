@@ -48,8 +48,8 @@ Week 20 (May 13-17)-------------: Finish documentation.
 &nbsp;
 
 ### Sketches
-
 ![Image](sketches.jpg)
+&nbsp;
 
 ### Bill of materials
 **Launcher**  
@@ -90,4 +90,4 @@ Set up accelerometer
 Define variables  
 Collect position data  
 Save data  
-
+&nbsp;
