@@ -5,3 +5,9 @@
 * **Improved the strength of the electromagnet** used for the release of the payload by utilizing double, triple, and quadruple wraps of copper wire. As it stands, the electromagnet pulls with nearly 3.5 N of force. To test if this is sufficient, further analysis of forces needs to be performed. [Link to related issue #2](https://github.com/GDamiani2927/Conklin-Damiani-PITS/issues/2)
 ## 2/20/2024: 
 * **Dremeled channel through axle to support wiring through gearbox**. The slip ring does not have any sort of through bore, meaning it has to be behind any axle we have, all the way back at the gearbox. To get the wiring through the gearbox, it has to pass through the axle. As a temporary solution before we purchase a through bore axle, a dremeled channel will suffice. [Link to related issue #3](https://github.com/GDamiani2927/Conklin-Damiani-PITS/issues/3)
+
+## 3/4/2024:
+* **Increased battery power to speed up motor**. Initially, we had been underdriving the motor at 9V even though the motor takes 12V. The motor's max speed was slower than we expected so we added another 9V battery pack to overdrive the motor and hopefully boost the speed. The motor's speed did increase but it is still unclear if it is at its max speed. 
+
+## 3/13/2024:
+* **Fixed encoder roation counting**. The documentation found online that gave us channel rises per rotation was misleading so the rotations we were calculating were off. We found that we only need to use binary data from Channel A and not Channel B because B is only used to indicate rotation direction. We are now using the correct ratio for channel rises so the calculations for rotations are now accurate.
