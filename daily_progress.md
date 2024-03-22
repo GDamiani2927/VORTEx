@@ -14,5 +14,7 @@
 
 ## 3/20/2024:
 * **Completed construction of launcher.** Motor has not been added yet, as most of the tests thus far have been for weight and balance. Counterweighting the side with the payload has proven to be difficult and is being added as an issue. [Link to related issue #5](https://github.com/GDamiani2927/Conklin-Damiani-PITS/issues/3)
+* ![Current Launcher](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/images/Launcher_Assembly.png)
 * The slip ring adaptation works perfectly with minimal friction even at high simulated RPMs, no tangling has been noted thus far, will update if an issue arises.
 * **Started design of payload.** Cad snapshots pictured below for current progression. Largest hurdle is the way in which to attach the payload to the electromagnet. Current plan is to fasten a cross section of the same ferrous material that makes up the core of the EM, but with a small radius, this will not give us a large margin of error. Unfortunately, access to ferrous material that can be integrated into the payload without significantly impacting its balance is limited. Furthermore, the shape of the payload is not particularly conducive to incorporating any sort of metal plate, rod, or shim. [Link to related issue #6](https://github.com/GDamiani2927/Conklin-Damiani-PITS/issues/6)
+
