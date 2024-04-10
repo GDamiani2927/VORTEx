@@ -21,3 +21,5 @@
 ## 3/27/2024:
 * **Finished rocket code.** We finished the rocket code so that it will collect and store data while in flight. The altimeter will find the acceleration in the x, y, and z directions and store it in the Pico until it is transferred to a data file when the Pico is reconnected to a computer.
 * **Ran code on launcher.** We added the motor to the launcher and ran the code on the launcher for the first time. We were initially concerned that the motor wouldn't have enough torque to move the heavy arm faster but when we ran the code we found that the motor was able to spin the arm fast enough. Increasing the gear ratio allowed the motor to use the weight of the arm and spin with more force. We will have to anchor the launcher very firmly because the arm moves the whole piece with a lot of force.
+
+## 4/10/2024:
