@@ -24,3 +24,6 @@
 
 ## 4/12/2024:
 * **Finished Electromagnet**. We added the electromagnet onto the launcher and tested that it would hold the rocket. We lengthened the electromagnet so that a bit of the danger rod stuck out the end for the rocket to attach to. The rocket attachs to the electromagnet with a small metal piece that the magnet will hold until it is turned off. We tested the power of the magnet and found that the electromagnet is strong enough to hold the rocket while it is spinning, even with gravity pushing down on it. When the magnet is turned off while the arm is spinning, the rocket detaches from the electromagnet.
+
+## 4/24/2024:
+* **Finished Rocket Fabrication**. Fabricated and assembled the "shell of the rocket," which is to say the rocket without any components inside it. Ran a dry test with the electromagnet which held on securely and was able to disengage as soon as power was cut. Next step is to add the components, but initial attempts reveal an unexpected challenge of securing the nose of the rocket (which houses the MPU 6050 Gyroscope) without twisting and thus overstressing the wires. Former design included 3 revolution threading, but twisting the wires that much will likely rip off the solder from the MPU which is not an extremely secure connection. 
