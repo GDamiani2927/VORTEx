@@ -32,7 +32,7 @@
 
 ## 4/30/2024
 * **Redesigned and Refabricataed Payload Hull**. Reprinted the main fuselage of the payload and the nose cone to include holes/flanges for screws as opposed to threading (issues mentioned above). Flanges confirmed to secure hull tightly, effect on aerodynamics should be negligible at these speeds and scale of the payload. See image.
-![Flanges](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/images/Casingpng)
+![Flanges](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/images/Casing.png)
 * **Finished Code for Logging Acceleration Values to CSV**. Encountered issues with PiCo connection, have to diagnose and fix at a later date.
 
 ## 5/7/2024
