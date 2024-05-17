@@ -37,6 +37,6 @@
 
 ## 5/7/2024
 * **Replaced PiCO, Ran Payload Code**. Data logged accurately to CSV and sorted into X,Y,Z, acceleration values along with time. Onboard switch and power supply operational, with code and data switch attached when necessary.
-* 
+  
 ## 5/15/2024
 * **Fixed Encoder Data, Redesigned Wire Access**. Made holes in the rocket so that wires were more accessible and would fit in rocket by adding gaps/slits into body of rocket. Discovered that pico wasn't receiving encoder data -- tried changing wiring, replacing wires, and moving encoder magnet closer to receiver. Fixed bug by changing input pins but not sure why that solved the problem because we had tried that earlier. Tested code on launcher and successfully stopped after a specific number of rotations. Next step is to add rocket to launcher and see if it works as expected.
