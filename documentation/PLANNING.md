@@ -47,7 +47,7 @@ Week 20 (May 13-17)-------------: Finish documentation.
 &nbsp;
 
 ### Sketches
-<img src="sketches.jpg" alt="Planning Blueprint" width="400" height="500">
+<img src="images/sketches.jpg" alt="Planning Blueprint" width="400" height="500">
 
 &nbsp;
 ### Pseudocode
