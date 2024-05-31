@@ -47,7 +47,7 @@ Week 20 (May 13-17)-------------: Finish documentation.
 &nbsp;
 
 ### Sketches
-<img src="images/sketches.jpg" alt="Planning Blueprint" width="400" height="500">
+![Plan Sketch](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/images/sketches.jpg)
 
 &nbsp;
 ### Pseudocode
