@@ -5,7 +5,7 @@ import adafruit_mpu6050
 import busio
 
 i2c = busio.I2C(board.GP5, board.GP4)
-mpu = adafruit_mpu6050.MPU6050(i2c)
+mpu = adafruit_mpu6050.MPU6050(i2c, address=0x68)
 
 with open("/data.csv", "a") as datalog: 
     while True:
