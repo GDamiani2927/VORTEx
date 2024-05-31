@@ -8,7 +8,12 @@
 * [Tests](#tests)
 
 ## CAD
-
+### Launcher
+#### Components
+#### Analysis
+### Payload
+#### Components
+#### Analysis
 ## Code
 
 ### Launcher 
@@ -22,7 +27,7 @@ Magnet: controlled with digital output magnet.value = True or magnet.value = Fal
 
 finish tmr when have access to real code
 
-#### Problems
+#### Challenges
 Encoder values: The first issue was getting actual values from the encoders. We had never used the encoders on a REV motor with a Pico before so we experimented to find out how it would connect best. We found that Pico could read the Channel 1 and Channel 2 wires in the encoder cable by simply connecting them to a pin and declaring them as a digital input. They each would transmit True or False values depending on whether or not one of the magnets had spun by them, which we would use to find the number of rotations.
 
 Rotations: The encoder's values could be used to indicate the number of revolutions by the axle but we had issues finding the correct ratio. Channel 1 and Channel 2 are the two signals the encoders send to the Pico, but Channel 2 is only necessary to find which direction the motor is spinning, which was not relevant to our project so we didn't use that wire. Channel 1 would send True or False values but we had to find how many times the wire read as True in one spin. The sources online all offered slightly different ratios but eventually using [this source] we found that there would be 4 channel raises in one rotation. After testing this by spinning the axle exactly once, we found that this produced the correct number of rotations based off the encoder values.
@@ -32,16 +37,16 @@ No signal from encoders: This was the most significant problem that we encounter
 #### Analysis
 do tmr when have real code
 
-### Rocket
+### Payload
 
-[Rocket Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/Rocket.py)
+[Payload Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/Rocket.py)
 
 #### Components
 Accelerometer: uses adafruit_mpu6050 library with mpu.acceleration[x] to find acceleration for x, y, and z                                   
 Data Storage: pushes accelerometer data to data.csv with datalog.flush()
 
 #### Analysis
-The rocket code was very straightforward and was one of the simplest parts of this project because the task was similar to the Data Storage assignment we completed earlier in the year. The code needed to track and store the acceleration of the rocket so we were able to completely reuse the code from the Data Storage assignment. The rocket uses an accelerometer to find the acceleration of the Pico in the x, y, and z directions when it is placed in data mode. Then, when it is put back into code mode, the acclerometer data is saved onto the Pico's data.csv file. From there, the data from the accelerometer is graphed so that we can access and interpret it.
+The payload code was very straightforward and was one of the simplest parts of this project because the task was similar to the Data Storage assignment we completed earlier in the year. The code needed to track and store the acceleration of the rocket so we were able to completely reuse the code from the Data Storage assignment. The rocket uses an accelerometer to find the acceleration of the Pico in the x, y, and z directions when it is placed in data mode. Then, when it is put back into code mode, the acclerometer data is saved onto the Pico's data.csv file. From there, the data from the accelerometer is graphed so that we can access and interpret it.
 
 ## Wiring
 
