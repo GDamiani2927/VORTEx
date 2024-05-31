@@ -1,5 +1,11 @@
 # Documentation
 
+## Table of Contents
+* [CAD](#cad)
+* [Code](#code)
+* [Wiring](#wiring)
+* [Data](#data)
+
 ## CAD
 
 ### Renderings
