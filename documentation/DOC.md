@@ -16,7 +16,11 @@
 [Launcher Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/SpinLaunch.py)
 
 #### Components
-Encoder values: ch1.value and ch2.value
+Motor: declared in pwmio library and controlled with motor1.throttle = 1 or motor1.throttle = 0
+Encoder values: received and read with ch1.value and ch2.value
+Magnet: controlled with digital output magnet.value = True or magnet.value = False
+
+finish tmr when have access to real code
 
 #### Problems
 Encoder values: The first issue was getting actual values from the encoders. We had never used the encoders on a REV motor with a Pico before so we experimented to find out how it would connect best. We found that Pico could read the Channel 1 and Channel 2 wires in the encoder cable by simply connecting them to a pin and declaring them as a digital input. They each would transmit True or False values depending on whether or not one of the magnets had spun by them, which we would use to find the number of rotations.
@@ -26,7 +30,7 @@ Rotations: The encoder's values could be used to indicate the number of revoluti
 No signal from encoders: This was the most significant problem that we encountered and we still aren't 100% sure of the cause of this issue. The encoders just suddenly stopped sending signals to the Pico even though they had worked the day before. We checked all the wiring and code but couldn't find any problems that would make the encoder suddenly stop working. Even after connecting the motor to the REV Control Hub, there were no encoder signals. Then, we found [online] that some of the encoders on REV motor tended to move away from the magnets inside the motor so it wouldn't be able to detect any signals. To try to tix this, we took off the back cap of the motor and pushed the black encoder disk slightly toward the circuit board and the magnets, but without letting them touch and short out. Once we reconnected the encoder, it would show values on the REV Control Hub, but not on the Pico. We changed around the pins the encoder was connected to and then it would finally output signals to the Pico. This issue was most likely a combination of the encoder being slightly nudged away from the magnets inside the motor and the Pico not receiving the input on some of its pins.
 
 #### Analysis
-
+do tmr when have real code
 
 ### Rocket
 
@@ -55,5 +59,7 @@ The rocket code was very straightforward and was one of the simplest parts of th
 This test showed the first successful test of the entire code. As shown in the video, the launcher spins the arm 10 times and then releases the magnet when the encoders indicate that the arm is in the right spot, which would release the rocket in a real launch. Then, the arm stops and the code ends. This showed that we had solved several of our earlier problems. The Pico was able to track the number of revolutions the arm made, which was a problem early on because we couldn't find the exact ratio of encoder ticks to axle rotations. It also showed that the encoders were working again after the issue we had with the encoders not sening any signal to the pins. The code was also able to detect when the arm was at a specific position and released the magnet.
 
 #### Launch Test
+
+
 
 #### Analysis
