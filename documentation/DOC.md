@@ -47,8 +47,6 @@ The rocket code was very straightforward and was one of the simplest parts of th
 
 ## Data
 
-### Analysis
-
 ## Tests
 
 ### Code Test
