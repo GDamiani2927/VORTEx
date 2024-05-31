@@ -38,6 +38,7 @@
 ## 5/7/2024
 * **Replaced PiCO, Ran Payload Code**. Data logged accurately to CSV and sorted into X,Y,Z, acceleration values along with time. Onboard switch and power supply operational, with code and data switch attached when necessary.
 * **Redesigned Blade, Assembled**. Previous blade utilizec a stop-gap counterweight fashioned from axles and a large ferrous core that stuck out from the blade. Not only was this not particularly sleek, it was potentially a safety hazard. Replaced with a contained (intentional) counterweight that can be swapped out for ease of balancing. Balancing was planned in CAD and tested in a real environment, COM found to be accurate to the COR (center of rotation) to 4.5 mm, which for our purposes is accurate enough. At higher RPMs, some wobble was noticed, creating an issue for this in the future but for now it isn't a priority concern. See center of mass diagram below.
+
 ![Blade COM](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/images/blade.png)
   
 ## 5/15/2024
