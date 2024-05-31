@@ -26,7 +26,7 @@
 
 [Rocket Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/Rocket.py)
 
-#### Components
+#### Components 
 Accelerometer: uses adafruit_mpu6050 library with mpu.acceleration[x] to find acceleration for x, y, and z                                   
 Data Storage: pushes accelerometer data to data.csv with datalog.flush()
 
