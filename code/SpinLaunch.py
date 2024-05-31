@@ -1,40 +1,38 @@
 #type: ignore
 import board
-import time
-import digitalio
+import math
+from adafruit_motor import motor
 import pwmio
+import digitalio
+import analogio
 
-motor = pwmio.PWMOut(board.GP14, duty_cycle = 65535,frequency=5000)
+pwmA = pwmio.PWMOut(board.GP14, frequency=50)
+pwmB = pwmio.PWMOut(board.GP15, frequency=50)
+motor1 = motor.DCMotor(pwmA,pwmB)
 
-release = digitalio.DigitalInOut(board.GP1)
-release.direction = digitalio.Direction.OUTPUT
-release.value = True
+magnet = digitalio.DigitalInOut(board.GP2)
+magnet.direction = digitalio.Direction.OUTPUT
+magnet.value = True
 
-on = digitalio.DigitalInOut(board.GP0)
-on.direction = digitalio.Direction.OUTPUT
-on.value = True
+button = digitalio.DigitalInOut(board.GP13)
+button.direction = digitalio.Direction.INPUT
 
-speed = 0
-encoder = 0
-encoderMax = 50
-rotation = 0
-rotationMax = 15
+ch1 = digitalio.DigitalInOut(board.GP0)
+old1 = ch1.value
+ticks = 0
 
-while (speed < 65535):
-    motor.duty_cycle = speed
-    print(speed)
-    speed += 5
-    time.sleep(.001)
-while speed > 0:
-    print(encoder)
-    print(rotation)
-    if (encoder == encoderMax):
-        rotation += 1
-        encoder = 0
-        if (rotation == rotationMax):
-            release.value = False
-            while (speed > 0):
-                motor.duty_cycle = speed
-                print(speed)
-                speed -= 5
-                time.sleep(.001)
+while True:
+    motor1.throttle = -1
+    if(button.value):
+        motor1.throttle = 0
+    if (ch1.value == False and old1 == True):
+        ticks += 1
+    old1 = ch1.value
+    rot = ticks/54
+    if (rot > 75 and math.fmod(ticks, 4) == 3):
+        magnet.value = False
+        motor1.throttle = 0
+        print("release")
+        break
+    print("rots:")
+    print(rot)
