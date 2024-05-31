@@ -16,8 +16,8 @@
 [Launcher Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/SpinLaunch.py)
 
 #### Components
-Motor: declared in pwmio library and controlled with motor1.throttle = 1 or motor1.throttle = 0
-Encoder values: received and read with ch1.value and ch2.value
+Motor: declared in pwmio library and controlled with motor1.throttle = 1 or motor1.throttle = 0                                              
+Encoder values: received and read with ch1.value and ch2.value                                                                               
 Magnet: controlled with digital output magnet.value = True or magnet.value = False
 
 finish tmr when have access to real code
