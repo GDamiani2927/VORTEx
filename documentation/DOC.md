@@ -63,3 +63,4 @@ This test showed the first successful test of the entire code. As shown in the v
 ![GIF](images/test2.gif)
 
 #### Analysis
+This test showed our first official launch with the finished code and CAD designs. We had already determined that the arm would spin but we hadn't tested releasing the rocket while spinning yet. We had issues with the transister so Gabe had to release the electromagnet manually by estimating when the arm was on an upward arc and turning off the power supply to the electromagnet, which would release the rocket. The test was successful because it showed that the electromagnet would release the rocket very quickly and the rocket flew off the launcher. This test showed that all the different parts of the project that we had been working on separately were able to work together and didn't cause any issues. We didn't gather data from the rocket for this test because we were just testing the launcher.
