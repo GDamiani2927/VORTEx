@@ -18,6 +18,11 @@
 #### Components
 
 #### Problems
+Encoder values: The first issue was getting actual values from the encoders. We had never used the encoders on a REV motor with a Pico before so we experimented to find out how it would connect best. We found that Pico could read the Channel 1 and Channel 2 wires in the encoder cable by simply connecting them to a pin and declaring them as a digital input. They each would transmit True or False values depending on whether or not one of the magnets had spun by them, which we would use to find the number of rotations.
+
+Rotations: The encoder's values could be used to indicate the number of revolutions by the axle but we had issues finding the correct ratio. Channel 1 and Channel 2 are the two signals the encoders send to the Pico, but Channel 2 is only necessary to find which direction the motor is spinning, which was not relevant to our project so we didn't use that wire. Channel 1 would send True or False values but we had to find how many times the wire read as True in one spin. The sources online all offered slightly different ratios but eventually using [this source] we found that there would be 4 channel raises in one rotation. After testing this by spinning the axle exactly once, we found that this produced the correct number of rotations based off the encoder values.
+
+No signal from encoders: This was the most significant problem that we encountered and we still aren't 100% sure of the cause of this issue. All of a sudden  
 
 #### Analysis
 
@@ -26,7 +31,7 @@
 
 [Rocket Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/Rocket.py)
 
-#### Components 
+#### Components
 Accelerometer: uses adafruit_mpu6050 library with mpu.acceleration[x] to find acceleration for x, y, and z                                   
 Data Storage: pushes accelerometer data to data.csv with datalog.flush()
 
