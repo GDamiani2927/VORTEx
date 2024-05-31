@@ -9,8 +9,21 @@
 
 ## CAD
 ### Launcher
+
+[Launcher CAD](https://cvilleschools.onshape.com/documents/1d00744b82773202e76274bb/w/be73ad2991f912dc77e25081/e/d71a1bd423725bcd32285f1e)
+
+#### Overview
+The launcher is our name for the bulk of the project, the mechanism to launch the payload. The launcher harnesses the power of angular velocity by spinning up a beam at a high rate and then detaching the payload at a specified time. This method of launching allows us to consistently launch the payload without having to power the payload itself. Without having to use onboard thrust, we can greatly simplify the launching process.
 #### Components
+Motor Casing: The base of the launcher that holds the motor and attaces to the central axle. Contains a 90 Degree gearbox to transfer power from the vertical to horizontal plane. Furthermore, the motor casing has mounting holes for easy attachment to whatever base best suits the launcher.
+
+Beam: The beam of the launcher is the wing shaped structure that rotates around the center of rotation. One end of the beam contains the electromagnet to attach to the rocket, whereas the other end contains a large counterweight to counterract the stress of the electromagnet and payload.
+#### Challenges
+Counterweighting Beam: On one end of the beam, the rocket and electromagnet add considerable weight imbalance. Furthermore, the opposite side of the beam cannot be very long, as the print bed of our 3d printers could not facilitate anything nearly as long as the payload end. The solution we landed on was creating a counterweight holder on the other end where we could add various different weights at different distances from the center to perfect our balance of the beam.
+
+Reinforcing Base: When the beam spins at high RPMs, the torque bucks the entire launcher back and forth. To reinforce the base, we attached the motor casing to a wide piece of wood, weighed down by two large masses. This allows us to easily set up and dismantle the launcher on nearly any surface and still get somewhat consistent launch conditions.
 #### Analysis
+Overall, the design of the launcher is pretty good. It has all the basics required for a semi-consistent launch and has had pretty good performance. That said, there are many aspects that could be improved. Firstly, the high center of gravity of the motor casing results in instability. In the long run this could be remedied by changing the motor to lying flat near the base of the launcher. Secondly, the design is not particularly flexible. It wasn't designed with assembly and disassembly in mind, and as a result it creates a large undertaking any time modifications are in order. Just as an examble of this, it took two entire days to assemble and dissassemble the entire thing to swap out the old slip ring for the new one. In the future, when the launcher is not in constant testing, the design should be improved to allow for ease of both operation and maintenance.
 ### Payload
 #### Components
 #### Analysis
