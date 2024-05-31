@@ -37,6 +37,13 @@
 
 ## 5/7/2024
 * **Replaced PiCO, Ran Payload Code**. Data logged accurately to CSV and sorted into X,Y,Z, acceleration values along with time. Onboard switch and power supply operational, with code and data switch attached when necessary.
+* **Redesigned Blade, Assembled**. Previous blade utilizec a stop-gap counterweight fashioned from axles and a large ferrous core that stuck out from the blade. Not only was this not particularly sleek, it was potentially a safety hazard. Replaced with a contained (intentional) counterweight that can be swapped out for ease of balancing. Balancing was planned in CAD and tested in a real environment, COM found to be accurate to the COR (center of rotation) to 4.5 mm, which for our purposes is accurate enough. At higher RPMs, some wobble was noticed, creating an issue for this in the future but for now it isn't a priority concern. See center of mass diagram below.
+![Blade COM](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/images/Blade.png)
   
 ## 5/15/2024
 * **Fixed Encoder Data, Redesigned Wire Access**. Made holes in the rocket so that wires were more accessible and would fit in rocket by adding gaps/slits into body of rocket. Discovered that pico wasn't receiving encoder data -- tried changing wiring, replacing wires, and moving encoder magnet closer to receiver. Fixed bug by changing input pins but not sure why that solved the problem because we had tried that earlier. Tested code on launcher and successfully stopped after a specific number of rotations. Next step is to add rocket to launcher and see if it works as expected.
+
+## 5/22/2024
+* **Slip Ring Malfunction**. During deconstruction for motor access, the slip ring wire snapped, setting the project back at least a week. New slip ring (of different dimensions, warranting a redesign) was purchased and should arrive in time for launch #1. In the mean time, all work will have to be done without the launcher operational. Redesign completed, refabrication will likely take a day given current scheduling issues.
+* **Electromagnetic Powering.** Experimented with transistors for automatic switching of power supply current to the electromagnet. Landed on power MOSFET IRLB8721 for near instant switching. Not a perfect solution. [Link to related issue #8](https://github.com/GDamiani2927/Conklin-Damiani-PITS/issues/8)
+* **Designed and Fabricated Kill Switch.** Safety was a priority when this project was outlined. With this in mind, we added a "remote" shutoff for the motor that instantly kills all power to the launcher when switched except for the electromagnet. This allows us to shut down the launcher without the rocket detaching and potentially hitting somebody. 
