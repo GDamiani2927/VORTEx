@@ -19,9 +19,12 @@
 
 [Launcher Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/SpinLaunch.py)
 
+
 ### Rocket
 
 [Rocket Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/Rocket.py)
+
+#### Analysis
 
 The rocket code was very straightforward and was one of the simplest parts of this project because the task was similar to the Data Storage assignment we completed earlier in the year. The code needed to track and store the acceleration of the rocket so we were able to completely reuse the code from the Data Storage assignment. The rocket uses an accelerometer to find the acceleration of the Pico in the x, y, and z directions when it is placed in data mode. Then, when it is put back into code mode, the acclerometer data is saved onto the Pico's data.csv file. From there, the data from the accelerometer is graphed so that we can access and interpret it.
 
