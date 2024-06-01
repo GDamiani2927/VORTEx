@@ -34,7 +34,7 @@ Overall, the design of the launcher is pretty good. It has all the basics requir
 [Launcher Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/SpinLaunch.py)
 
 #### Overview
-The main problem with the code was figuring out how the encoders worked and received signal. We had used REV motors before, but only when connected to a REV Control Hub so we had to experiment with how to connect it to the Pico. We found that with the Pico, the encoder wires could send data just like a button that could be used to show how many times the arm rotated. The code counts the number of rotations by using the correct ratio and the gear ratio until it reaches the release point. Then it releases the magnet, stop the motor, and ends the code. The number of rotations before release can be easily changed depending on whether 
+The code for the launcher allows the arm to spin and detach the payload so that it is launched and can gather data. It starts by turning on the electromagnet, which holds the payload connected to the arm, and then spinning the motor up to max speed. The code counts the number of rotations by using the encoders built into the motor and once the arm has rotated the set amount, the magnet is turned off, which detached the payload and launches it. The code is relatively straightforward but we ran into several issues with the encoders. 
 
 #### Components
 Motor: declared in pwmio library and controlled with motor1.throttle = 1 or motor1.throttle = 0                                              
@@ -49,21 +49,26 @@ Rotations: The encoder's values could be used to indicate the number of revoluti
 
 No signal from encoders: This was the most significant problem that we encountered and we still aren't 100% sure of the cause of this issue. The encoders just suddenly stopped sending signals to the Pico even though they had worked the day before. We checked all the wiring and code but couldn't find any problems that would make the encoder suddenly stop working. Even after connecting the motor to the REV Control Hub, there were no encoder signals. Then, we found [online](https://www.reddit.com/r/FTC/comments/s3wexw/motors_not_running_after_trying_to_use_encoders/) that some of the encoders on REV motor tended to move away from the magnets inside the motor so it wouldn't be able to detect any signals. To try to tix this, we took off the back cap of the motor and pushed the black encoder disk slightly toward the circuit board and the magnets, but without letting them touch and short out. Once we reconnected the encoder, it would show values on the REV Control Hub, but not on the Pico. We changed around the pins the encoder was connected to and then it would finally output signals to the Pico. This issue was most likely a combination of the encoder being slightly nudged away from the magnets inside the motor and the Pico not receiving the input on some of its pins.
 
+#### Analysis
+Overall, the code worked successfully when put together with the launcher and rocket. The encoders were by far the most difficult part but once those issues were solved, the rest of the code was relatively straightforward. We had only used the built-in encoders in the REV motors with the REV Control Hub, so it took a while to figure out how to wire and receive data from the encoders. We also learned that by using a transistor and an external power supply to control the voltage, we can control the magnet by sending it True/False signals like any other digital output that would turn it on and off. The launcher releases the payload when the encoders show that the arm has rotated enough times but also when the arm is in the correct position, however we suspect that there is a small degree of inaccuracy because the change in encoder values is occasionally not detected. This would make the arm over-rotate a bit and this is hard to fix because it is not a reliable bug and is hard to detect because it does not have a great impact on the release time. Also, the code starts measuring arm positioning from whatever position the motor begins in, so if the arm does not begin in the same spot every time, the launcher will release the rocket differently with each launch. However, this does not have a huge effect on the launch because the counterweight on the arm is heavy enough to ensure that the motor starts in the same position. The code for the launcher had several problems and bugs that we were almost entirely able to fix so that the arm would launch the payload at the correct time and position.
+
 ### Payload
 
 [Payload Code](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/Payload.py)
+
+#### Overview
+The payload is attached to the end of the launcher arm and is what we use to gather data. It is launched into the air and an accelerometer will gather acceleration in the z, y, and z directions while it is in data mode. Then, we use the data.csv file on the Pico to graph the acceleration.
 
 #### Components
 Accelerometer: uses adafruit_mpu6050 library with mpu.acceleration[x] to find acceleration for x, y, and z                                   
 Data Storage: pushes accelerometer data to data.csv with datalog.flush()
 
 #### Analysis
-The payload code was very straightforward and was one of the simplest parts of this project because the task was similar to the Data Storage assignment we completed earlier in the year. The code needed to track and store the acceleration of the rocket so we were able to completely reuse the code from the Data Storage assignment. The rocket uses an accelerometer to find the acceleration of the Pico in the x, y, and z directions when it is placed in data mode. Then, when it is put back into code mode, the acclerometer data is saved onto the Pico's data.csv file. From there, the data from the accelerometer is graphed so that we can access and interpret it.
+The payload code was very straightforward and was one of the simplest parts of this project because the task was similar to the Data Storage assignment we completed earlier in the year. The code needed to track and store the acceleration of the payload so we were able to completely reuse the code from the Data Storage assignment. The payload uses an accelerometer to find the acceleration of the Pico in the x, y, and z directions when it is placed in data mode. Then, when it is put back into code mode, the acclerometer data is saved onto the Pico's data.csv file. From there, the data from the accelerometer is graphed so that we can access and interpret it.
 
 ## Wiring
 
-## Data
-### Lol what data
+### Analysis
 
 ## Tests
 
