@@ -69,14 +69,22 @@ The payload code was very straightforward and was one of the simplest parts of t
 ## Wiring
 
 ### Launcher
-![Image](/images/launcher_wiring.jpg)
+![Image](/images/launcher_wiring.jpeg)
+
+#### Components
+
 
 #### Analysis
 
 ### Payload
-![Image](/images/payload_wiring.jpg)
+![Image](/images/payload_wiring.jpeg)
+
+#### Components
+Accelerometer                                                                                                                               
+Pico battery
 
 #### Analysis
+The wiring for the payload was quite simple because it only contained an accelerometer and a Pico battery. It was also identical to the wiring for the Data Storage assignment, so we did not have many issues with it. We wired the accelerometer and battery so that they would fit inside the payload during launches. The Pico rails were accessible through 2 slits in the body of the payload so that we could use a switch to change the Pico between data mode and code mode. The wiring had to be very compact and secure so that it would fit in the payload without disconnecting.
 
 ## Tests
 
