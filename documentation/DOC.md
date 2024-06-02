@@ -72,7 +72,13 @@ The payload code was very straightforward and was one of the simplest parts of t
 ![Image](/images/launcher_wiring.jpeg)
 
 #### Components
-
+Power supply                                                                                                                                
+2 9V battery packs                                                                                                                          
+REV HD Hex Motor                                                                                                                            
+H-Bridge                                                                                                                                    
+Electromagnet                                                                                                                               
+Kill switch                                                                                                                                 
+Pico battery
 
 #### Analysis
 
