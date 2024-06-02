@@ -37,10 +37,10 @@ Overall, the design of the launcher is pretty good. It has all the basics requir
 The code for the launcher allows the arm to spin and detach the payload so that it is launched and can gather data. It starts by turning on the electromagnet, which holds the payload connected to the arm, and then spinning the motor up to max speed. The code counts the number of rotations by using the encoders built into the motor and once the arm has rotated the set amount, the magnet is turned off, which detached the payload and launches it. The code is relatively straightforward but we ran into several issues with the encoders. 
 
 #### Components
-Motor: declared in pwmio library and controlled with motor1.throttle = 1 or motor1.throttle = 0                                              
-Encoder values: received and read with ch1.value and ch2.value                                                                               
-Magnet: controlled with digital output magnet.value = True or magnet.value = False
-Kill switch: turns off motor if button.value reads as True
+Motor: declared in pwmio library and controlled with motor1.throttle = 1 or motor1.throttle = 0                                             
+Encoder values: received and read with ch1.value and ch2.value                                                                              
+Magnet: controlled with digital output magnet.value = True or magnet.value = False                                                          
+Kill switch: turns off motor if button.value reads as True 
 
 #### Challenges
 Encoder values: The first issue was getting actual values from the encoders. We had never used the encoders on a REV motor with a Pico before so we experimented to find out how it would connect best. We found that Pico could read the Channel 1 and Channel 2 wires in the encoder cable by simply connecting them to a pin and declaring them as a digital input. They each would transmit True or False values depending on whether or not one of the magnets had spun by them, which we would use to find the number of rotations.
