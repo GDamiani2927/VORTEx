@@ -1,9 +1,9 @@
 #type: ignore
 import board
 import math
-from adafruit_motor import motor
-import pwmio
-import digitalio
+from adafruit_motor import motor #motor library
+import pwmio #pwm pins library
+import digitalio #digital input/output library
 import analogio
 
 pwmA = pwmio.PWMOut(board.GP14, frequency=50)
