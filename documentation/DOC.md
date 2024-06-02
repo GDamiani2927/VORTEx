@@ -77,10 +77,12 @@ Power supply
 REV HD Hex Motor                                                                                                                            
 H-Bridge                                                                                                                                    
 Electromagnet                                                                                                                               
+Transistor                                                                                                                                  
 Kill switch                                                                                                                                 
 Pico battery
 
 #### Analysis
+The wiring for our launcher was more complex than the payload because it had a lot more parts. It uses an external power supply to power the electromagnet that detaches the payload from the arm by supplying power that is run through the transistor to the electromagnet. The Pico is also connected to the circuit so that it can turn the electromagnet on and off as needed. It also uses an H-Bridge to control the REV motor that spins the arm. The motor is powered with two battery packs because the REV motors are usually powered with around 12V but we decided to overdrive the motor and give it 18V to increase the speed. The channel wires from the motor encoder go into input pins and the other two wires go into 3V and GND. This wiring ensures that the motor can pass the encoder values to the Pico. We added a kill switch that is programmed to stop the motor in case of an emergency. The wiring was not easy to combine together onto one Pico because there are many different parts that use all kinds of different pins so the wiring looks a bit unorganized and confusing. Even though we had some problems figuring out the wiring for the transistor and electromagnet, the wiring was overall successful in working the different parts of the launcher. 
 
 ### Payload
 ![Image](/images/payload_wiring.jpeg)
