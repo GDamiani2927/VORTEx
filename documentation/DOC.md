@@ -69,12 +69,12 @@ The payload code was very straightforward and was one of the simplest parts of t
 ## Wiring
 
 ### Launcher
-![Image](/images/launcherWiring.jpg)
+![Image](/images/launcher_wiring.jpg)
 
 #### Analysis
 
 ### Payload
-![Image](/images/payloadWiring.jpg)
+![Image](/images/payload_wiring.jpg)
 
 #### Analysis
 
