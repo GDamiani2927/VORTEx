@@ -1,7 +1,7 @@
 #type: ignore
 import time
 import board
-import adafruit_mpu6050 
+import adafruit_mpu6050 #acceleration library
 import busio
 
 i2c = busio.I2C(board.GP5, board.GP4)
