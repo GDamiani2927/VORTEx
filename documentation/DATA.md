@@ -4,4 +4,5 @@ And we are not trying to pass it off as such. This is a simulation of what our d
 The simulated data simulates a behavior similar to that of the actual launches in the format of the data that was supposed to be recorded. As demonstrated in Payload.py, the data is recorded to a CSV entitled "data" by the MPU 6050 accelerometer in the format of t (time in seconds),x (acceleration in meters/sec^2),y (acceleration in meters/sec^2),z (acceleration in meters/sec^2).
 
 The orientation of the gyroscope is planar with the Pico, and the x y and z acceleration values are local to this orientation. See the image for a depiction of the directions.
-![Axes](Axes.png)
+
+![Axes](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/images/Axes.png)
