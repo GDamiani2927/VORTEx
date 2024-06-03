@@ -103,9 +103,16 @@ The wiring for the payload was quite simple because it only contained an acceler
 #### Analysis
 This test showed the first successful test of the entire code. As shown in the video, the launcher spins the arm 10 times and then releases the magnet when the encoders indicate that the arm is in the right spot, which would release the rocket in a real launch. Then, the arm stops and the code ends. This showed that we had solved several of our earlier problems. The Pico was able to track the number of revolutions the arm made, which was a problem early on because we couldn't find the exact ratio of encoder ticks to axle rotations. It also showed that the encoders were working again after the issue we had with the encoders not sening any signal to the pins. The code was also able to detect when the arm was at a specific position and released the magnet.
 
-### Launch Test
+### Launch Test 1
 
 ![GIF](/images/test2.gif)
 
 #### Analysis
 This test showed our first official launch with the finished code and CAD designs. We had already determined that the arm would spin but we hadn't tested releasing the rocket while spinning yet. We had issues with the transister so Gabe had to release the electromagnet manually by estimating when the arm was on an upward arc and turning off the power supply to the electromagnet, which would release the rocket. The test was successful because it showed that the electromagnet would release the rocket very quickly and the rocket flew off the launcher. This test showed that all the different parts of the project that we had been working on separately were able to work together and didn't cause any issues. We didn't gather data from the rocket for this test because we were just testing the launcher.
+
+### Launch Test 2
+![Test 3](https://github.com/GDamiani2927/Conklin-Damiani-PITS/blob/main/images/test3.gif)
+
+#### Analysis
+This test ran similarly to our previous test, although proved that reversing the direction of the spin to complement the shape of the airofil was an effective strategy. Even without mechanical timing, the launch was still overall a success, as we were able to see a higher RPM achieved than the previous tests and saw the resultant higher altitude reached of the payload. However, on our final launch test that day (not pictured), the rocket landed in such a way that the data we had been collecting throughout the day got destroyed, along with the rest of the files on the board. We still are unsure as to why this happened, and are dissapointed in the resultant lack of data. This is further discussed in DATA.md.
+
